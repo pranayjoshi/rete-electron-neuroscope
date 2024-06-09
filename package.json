@@ -24,6 +24,7 @@
   "dependencies": {
     "rete": "^2.0.3",
     "rete-connection-plugin": "^2.0.2",
+    "rete-context-menu-plugin": "^2.0.3",
     "rete-vue-render-plugin": "^0.5.2"
   }
 }

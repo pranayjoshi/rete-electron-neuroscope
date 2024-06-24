@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Hello Rete.js!</title>
-    <style>
-      body, html{
-        height: 100%;
-        margin: 0
-      }
-      .socket.number{
-        background: #96b38a;
-      }
-    </style>
-  </head>
-  <body>
-   <div class="node-editor" id="nodeEditor"></div>
-   
-    <script>
-      var rete = require('./rete');
-      rete.createEditor(document.querySelector("#nodeEditor"));
-    </script>
-  </body>
+    <title>Rete.js with Electron</title>
+    <script src="node_modules/rete/build/rete.min.js"></script>
+    <script src="node_modules/rete-vue-render-plugin/build/vue-render-plugin.min.js"></script>
+    <script src="node_modules/rete-connection-plugin/build/connection-plugin.min.js"></script>
+    <script src="node_modules/rete-area-plugin/build/area-plugin.min.js"></script>
+</head>
+<body>
+    <div id="rete"></div>
+    <script src="renderer.js"></script>
+</body>
 </html>

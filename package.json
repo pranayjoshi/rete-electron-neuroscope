@@ -1,31 +1,17 @@
 {
-  "name": "rete-electron-neuroscope",
+  "name": "rete-electron-app",
   "version": "1.0.0",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pranayjoshi/rete-electron-neuroscope.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/pranayjoshi/rete-electron-neuroscope/issues"
-  },
-  "homepage": "https://github.com/pranayjoshi/rete-electron-neuroscope#readme",
   "devDependencies": {
-    "electron": "^30.1.0"
+    "electron": "^latest_version"
   },
   "dependencies": {
-    "rete": "^2.0.3",
-    "rete-connection-plugin": "^2.0.2",
-    "rete-context-menu-plugin": "^2.0.3",
-    "rete-vue-render-plugin": "^0.5.2",
-    "rete-alight-render-plugin": "^0.1.0"
+    "rete": "^1.4.5",
+    "rete-vue-render-plugin": "^0.5.1",
+    "rete-connection-plugin": "^0.9.0",
+    "rete-area-plugin": "^0.2.1"
   }
 }

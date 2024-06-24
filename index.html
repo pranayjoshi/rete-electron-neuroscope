@@ -1,27 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rete.js with Electron</title>
+    <title>Hello Rete.js!</title>
     <style>
-        body, html {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-        }
-        #rete {
-            width: 100vw;
-            height: 100vh;
-        }
+      body, html{
+        height: 100%;
+        margin: 0
+      }
+      .socket.number{
+        background: #96b38a;
+      }
     </style>
-</head>
-<body>
-    <div id="rete"></div>
-    <div>
-        <p>wadawdwad</p>
-    </div>
-    <script src="rete.js"></script>
-</body>
+  </head>
+  <body>
+   <div class="node-editor" id="nodeEditor"></div>
+   
+    <script>
+      var rete = require('./rete');
+      rete.createEditor(document.querySelector("#nodeEditor"));
+    </script>
+  </body>
 </html>

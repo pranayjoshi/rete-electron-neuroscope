@@ -1,10 +1,11 @@
-const { contextBridge } = require('electron');
-const Rete = require('rete');
-const ConnectionPlugin = require('rete-connection-plugin');
-const VueRenderPlugin = require('rete-vue-render-plugin');
+// preload.js
+window.addEventListener('DOMContentLoaded', () => {
+    const replaceText = (selector, text) => {
+        const element = document.getElementById(selector);
+        if (element) element.innerText = text;
+    };
 
-contextBridge.exposeInMainWorld('api', {
-  Rete: Rete.default || Rete,
-  ConnectionPlugin,
-  VueRenderPlugin
+    for (const dependency of ['chrome', 'node', 'electron']) {
+        replaceText(`${dependency}-version`, process.versions[dependency]);
+    }
 });

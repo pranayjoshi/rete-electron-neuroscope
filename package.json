@@ -6,7 +6,7 @@
     "start": "electron ."
   },
   "devDependencies": {
-    "electron": "^latest_version"
+    "electron": "^31.0.2"
   },
   "dependencies": {
     "rete": "^1.4.5",

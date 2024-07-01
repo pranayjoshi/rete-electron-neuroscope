@@ -1,0 +1,1 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><block type="takeoff" id="cY0RZ1n!UMmHp=V;/4l}" x="75" y="83"><next><block type="wait_seconds" id="DxlzFJI89=U^QG{IBq.L"><field name="SECONDS">10</field><next><block type="land" id="IY3CmGqrWsHifn1uIS3d"></block></next></block></next></block></xml>

@@ -9,12 +9,13 @@ function createWindow() {
         webPreferences: {
             preload: path.join(__dirname, './desktop/preload.js'),
             nodeIntegration: true,
-            contextIsolation: false,
+            contextIsolation: true,
         },
     });
 
-    mainWindow.loadURL('http://localhost:5173'); // The URL for Vite's dev server
-
+    // mainWindow.loadURL('http://localhost:5173'); // The URL for Vite's dev server
+    mainWindow.loadFile('neuroflow/index.html');
+    mainWindow.webContents.openDevTools();
     mainWindow.on('closed', function () {
         mainWindow = null;
     });
